@@ -1,8 +1,8 @@
-What the project does
-=====================
 
-Why the project is useful (helps to write FlexibleSearch and Impex scripts)
-=========================
+
+Why the project is useful 
+-------------------------
+(helps to write FlexibleSearch and Impex scripts)
 You get smart autosuggestions/autocomplete in the FlexibleSearch & Impex Consoles in HAC (Hybris Administration Console)
 [Hybrismart.com](http://hybrismart.com)
 
