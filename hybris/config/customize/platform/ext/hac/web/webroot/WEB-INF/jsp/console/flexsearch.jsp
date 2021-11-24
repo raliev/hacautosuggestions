@@ -21,17 +21,18 @@
 <script type="text/javascript" src="<c:url value="/static/js/codemirror5/codemirror.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/static/js/codemirror5/sql.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/static/js/console/flexsearch.js"/>"></script>
-<script type="text/javascript" src="<c:url value="/static/js/jquery.cookie.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/static/js/js.cookie-2.2.1.min.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/static/js/codemirror5/flexsearch-hint.js"/>"></script>
-<link rel="stylesheet" href="/admin/static/css/codemirror5/addon/hint/show-hint.css">
-<script src="/admin/static/js/codemirror5/addon/hint/show-hint.js"></script>
+<link rel="stylesheet" href="<c:url value="/static/css/codemirror5/addon/hint/show-hint.css"/>">
+<script src="<c:url value="/static/js/codemirror5/addon/hint/show-hint.js"/>"></script>
 
 </head>
-<div class="prepend-top span-17 colborder" id="content"
-     typeAttr-Url="<c:url value="/console/impex/typeAndAttributes" />"
-     allTypes-Url="<c:url value="/console/impex/allTypes" />">
+
+<body>
 	<!-- TODO: make some check against sys initialization -->
-	<div class="prepend-top span-17 colborder" id="content">
+	<div class="prepend-top span-17 colborder" id="content"
+		 typeAttr-Url="<c:url value="/console/impex/typeAndAttributes" />"
+		 allTypes-Url="<c:url value="/console/impex/allTypes" />">
 		<button id="toggleSidebarButton">&gt;</button>
 		<div class="marginLeft">
 			<h2>FlexibleSearch</h2>
@@ -54,7 +55,7 @@
 				</ul>
 				
 				<div id="tabs-1">
-					<form:form method="post" action="${url}" commandName="flexQueryForm">
+					<form:form method="post" action="${url}" modelAttribute="flexQueryForm">
 						<fieldset style="width:99%">
 							<legend><spring:message code="console.flexsearch.forms.legends.flexsearch" /></legend>
 							<div id="flexibleSearchQueryWrapper" class="textarea-container">
