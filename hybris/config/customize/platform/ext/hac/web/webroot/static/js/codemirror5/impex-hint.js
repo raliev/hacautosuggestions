@@ -117,7 +117,8 @@
             },
             async: false,
             headers: {
-                'Accept': 'application/json'
+                'Accept': 'application/json',
+                'X-CSRF-Token': $("meta[name='_csrf']").attr("content")
             },
             success: function (data) {
                 if (data.exists) {
